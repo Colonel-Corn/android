@@ -5,6 +5,12 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
            revision="refs/tags/android-5.1.0_r5" />
+        
+  <remote name="bitbucket" 
+          fetch="https://bitbucket.org/" />
+          
+  <remote name="cm"
+          fetch="https://github.com/CyanogenMod/" />
 
   <remote  name="github"
            fetch=".."
@@ -12,11 +18,36 @@
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
+          
+  <remote name="TeamBliss-Devices"
+          fetch="https://github.com/TeamBliss-Devices/" />
+          
+  <remote name="TeamBliss"
+          fetch="https://github.com/TeamBliss/" />
+
+  <remote name="TeamBliss-LP"
+          fetch="https://github.com/TeamBliss-LP/"
+	  review="review.blissroms.com" />
+
+  <remote name="tm"
+          fetch="https://github.com/TheMuppets/" />
+          
+  <remote  name="tv"
+           fetch="https://github.com/Team-Validus/" />
+          
+  <remote name="vr"
+          fetch="https://github.com/VanirAOSP/" />
+  
+  <remote name="lsd"
+          fetch="https://github.com/LiquidSmooth-Devices/" />
+
+  <remote  name="paranoid"
+           fetch="ssh://git@bitbucket.org/paranoidandroid/" />
 
   <default revision="refs/heads/cm-12.1"
            remote="github"
            sync-c="true"
-           sync-j="4" />
+           sync-j="16" />
 
   <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
